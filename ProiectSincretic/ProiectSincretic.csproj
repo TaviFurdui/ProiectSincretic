@@ -46,6 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdaugareAmbalaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugareAmbalaj.Designer.cs">
+      <DependentUpon>AdaugareAmbalaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugareMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugareMaterial.Designer.cs">
+      <DependentUpon>AdaugareMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +67,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdaugareAmbalaj.resx">
+      <DependentUpon>AdaugareAmbalaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugareMaterial.resx">
+      <DependentUpon>AdaugareMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +97,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySql.Data">
+      <Version>8.0.31</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
