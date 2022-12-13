@@ -33,6 +33,8 @@ namespace ProiectSincretic
                 cmdInsert.Parameters.AddWithValue("@NumeProdus", textBoxNumeProdus.Text);
                 cmdInsert.Parameters.AddWithValue("@CantitatePrimita", Convert.ToInt32(textBoxCantitate.Text));
                 cmdInsert.ExecuteNonQuery();
+                MessageBox.Show("Inserarea a fost un succes.", "Succes",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -41,6 +43,8 @@ namespace ProiectSincretic
                 cmdInsert.Parameters.AddWithValue("@CodProdus", Convert.ToInt32(textBoxCodProdus.Text));
                 cmdInsert.Parameters.AddWithValue("@Stoc", stoc + Convert.ToInt32(textBoxCantitate.Text));
                 cmdInsert.ExecuteNonQuery();
+                MessageBox.Show("Materialul si-a modificat stocul cu succes.", "Succes",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             //IFormatProvider culture = new CultureInfo("en-US", true);
@@ -51,8 +55,6 @@ namespace ProiectSincretic
             cmdInsertIntrari.Parameters.AddWithValue("@DataIntrare", dateTimePicker.Value.Date);
             cmdInsertIntrari.Parameters.AddWithValue("@Cantitate", Convert.ToInt32(textBoxCantitate.Text));
             cmdInsertIntrari.ExecuteNonQuery();
-            Console.WriteLine(dateTimePicker.Text);
-            Console.WriteLine(dateTimePicker.Value.Date);
         }
     }
 }

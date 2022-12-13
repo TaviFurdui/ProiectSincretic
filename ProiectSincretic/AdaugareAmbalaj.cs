@@ -32,6 +32,8 @@ namespace ProiectSincretic
                 cmdInsert.Parameters.AddWithValue("@Capacitate", Convert.ToInt32(textBoxCapacitate.Text));
                 cmdInsert.Parameters.AddWithValue("@Stoc", Convert.ToInt32(textBoxStoc.Text));
                 cmdInsert.ExecuteNonQuery();
+                MessageBox.Show("Inserarea a fost un succes.", "Succes",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -40,6 +42,8 @@ namespace ProiectSincretic
                 cmdInsert.Parameters.AddWithValue("@CodAmbalaj", Convert.ToInt32(textBoxCodAmbalaj.Text));
                 cmdInsert.Parameters.AddWithValue("@Stoc", stoc + Convert.ToInt32(textBoxStoc.Text));
                 cmdInsert.ExecuteNonQuery();
+                MessageBox.Show("Materialul si-a modificat stocul cu succes.", "Succes",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

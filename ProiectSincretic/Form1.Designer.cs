@@ -35,6 +35,9 @@ namespace ProiectSincretic
             this.buttonAfisareMaterial = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonAfisareTransport = new System.Windows.Forms.Button();
+            this.buttonRaportIntrari = new System.Windows.Forms.Button();
+            this.buttonRaportIesiri = new System.Windows.Forms.Button();
+            this.buttonVanzare = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +88,6 @@ namespace ProiectSincretic
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(505, 358);
             this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // buttonAfisareTransport
             // 
@@ -97,11 +99,44 @@ namespace ProiectSincretic
             this.buttonAfisareTransport.UseVisualStyleBackColor = true;
             this.buttonAfisareTransport.Click += new System.EventHandler(this.buttonAfisareTransport_Click);
             // 
+            // buttonRaportIntrari
+            // 
+            this.buttonRaportIntrari.Location = new System.Drawing.Point(188, 170);
+            this.buttonRaportIntrari.Name = "buttonRaportIntrari";
+            this.buttonRaportIntrari.Size = new System.Drawing.Size(132, 92);
+            this.buttonRaportIntrari.TabIndex = 8;
+            this.buttonRaportIntrari.Text = "Raport intrari intre doua date";
+            this.buttonRaportIntrari.UseVisualStyleBackColor = true;
+            this.buttonRaportIntrari.Click += new System.EventHandler(this.buttonRaportIntrari_Click);
+            // 
+            // buttonRaportIesiri
+            // 
+            this.buttonRaportIesiri.Location = new System.Drawing.Point(188, 277);
+            this.buttonRaportIesiri.Name = "buttonRaportIesiri";
+            this.buttonRaportIesiri.Size = new System.Drawing.Size(132, 92);
+            this.buttonRaportIesiri.TabIndex = 9;
+            this.buttonRaportIesiri.Text = "Raport iesiri intre doua date";
+            this.buttonRaportIesiri.UseVisualStyleBackColor = true;
+            this.buttonRaportIesiri.Click += new System.EventHandler(this.buttonRaportIesiri_Click);
+            // 
+            // buttonVanzare
+            // 
+            this.buttonVanzare.Location = new System.Drawing.Point(50, 277);
+            this.buttonVanzare.Name = "buttonVanzare";
+            this.buttonVanzare.Size = new System.Drawing.Size(132, 92);
+            this.buttonVanzare.TabIndex = 10;
+            this.buttonVanzare.Text = "Vanzare produs";
+            this.buttonVanzare.UseVisualStyleBackColor = true;
+            this.buttonVanzare.Click += new System.EventHandler(this.buttonVanzare_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(940, 416);
+            this.Controls.Add(this.buttonVanzare);
+            this.Controls.Add(this.buttonRaportIesiri);
+            this.Controls.Add(this.buttonRaportIntrari);
             this.Controls.Add(this.buttonAfisareTransport);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonAfisareAmbalaj);
@@ -122,6 +157,9 @@ namespace ProiectSincretic
         private System.Windows.Forms.Button buttonAfisareMaterial;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonAfisareTransport;
+        private System.Windows.Forms.Button buttonRaportIntrari;
+        private System.Windows.Forms.Button buttonRaportIesiri;
+        private System.Windows.Forms.Button buttonVanzare;
     }
 }
 

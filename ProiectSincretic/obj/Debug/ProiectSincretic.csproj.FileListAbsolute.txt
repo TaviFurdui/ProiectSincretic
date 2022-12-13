@@ -24,3 +24,6 @@ C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\Pro
 C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.exe
 C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.pdb
 C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.AdaugareAmbalaj.resources
+C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.RaportIntrari.resources
+C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.RaportIesiri.resources
+C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.Vanzare.resources

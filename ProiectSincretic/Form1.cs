@@ -67,9 +67,22 @@ namespace ProiectSincretic
             dataGridView1.DataSource = bSource;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void buttonRaportIntrari_Click(object sender, EventArgs e)
         {
+            var raportIntrari = new RaportIntrari();
+            raportIntrari.Show();
+        }
 
+        private void buttonRaportIesiri_Click(object sender, EventArgs e)
+        {
+            var raportIesire = new RaportIesiri();
+            raportIesire.Show();
+        }
+
+        private void buttonVanzare_Click(object sender, EventArgs e)
+        {
+            var vanzare = new Vanzare();
+            vanzare.Show();
         }
     }
 }
