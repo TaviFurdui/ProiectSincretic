@@ -11,26 +11,26 @@ using System.Windows.Forms;
 
 namespace ProiectSincretic
 {
-    public partial class RaportIesiri : Form
+    public partial class RaportIntrariAmbalaje : Form
     {
-        public RaportIesiri()
+        public RaportIntrariAmbalaje()
         {
             InitializeComponent();
         }
 
-        private void buttonTotalIesiri_Click(object sender, EventArgs e)
+        private void buttonTotalIntrari_Click(object sender, EventArgs e)
         {
-            MySqlCommand cmd = new MySqlCommand("SELECT SUM(CantitatePrimita) FROM dateiesire WHERE DataIesire > @data1 AND DataIesire < @data2 AND IdProdus=@id_produs", DBConnexion.con);
+            MySqlCommand cmd = new MySqlCommand("SELECT SUM(CantitatePrimita) FROM dateintrareambalaje WHERE DataIntrare > @data1 AND DataIntrare < @data2 AND IdAmbalaj=@id_ambalaj", DBConnexion.con);
             cmd.Parameters.AddWithValue("@data1", dateTimePicker1.Value.Date);
             cmd.Parameters.AddWithValue("@data2", dateTimePicker2.Value.Date);
-            cmd.Parameters.AddWithValue("@id_produs", Convert.ToInt32(textBoxProdus.Text));
+            cmd.Parameters.AddWithValue("@id_ambalaj", Convert.ToInt32(textBoxAmbalaj.Text));
             string suma = cmd.ExecuteScalar().ToString();
             Console.WriteLine(cmd.ExecuteScalar());
             if (cmd.ExecuteScalar().ToString() == "")
             {
                 suma = "0";
             }
-            labelAfisare.Text = "Total iesiri intre cele doua date: " + suma;
+            labelAfisare.Text = "Total intrari intre cele doua date: " + suma;
         }
     }
 }

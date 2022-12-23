@@ -24,7 +24,7 @@ namespace ProiectSincretic
             MySqlCommand cmdSelect = new MySqlCommand("SELECT stoc from produse where IdProdus = @IdProdus", DBConnexion.con);
             cmdSelect.Parameters.AddWithValue("@IdProdus", Convert.ToInt32(textBoxIdProdus.Text));
 
-            if (cmdSelect.ExecuteScalar() == null || Convert.ToInt32(cmdSelect.ExecuteScalar())==0)
+            if (cmdSelect.ExecuteScalar() == null || Convert.ToInt32(cmdSelect.ExecuteScalar()) <= 0 || Convert.ToInt32(cmdSelect.ExecuteScalar()) - Convert.ToInt32(textBoxCantitate.Text) < 0)
             {
                 MessageBox.Show("Nu se poate vinde. Verifica stocul.", "Eroare",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);

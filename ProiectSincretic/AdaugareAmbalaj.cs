@@ -45,6 +45,12 @@ namespace ProiectSincretic
                 MessageBox.Show("Materialul si-a modificat stocul cu succes.", "Succes",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+            MySqlCommand cmdInsertIntrari = new MySqlCommand("INSERT INTO `dateintrareambalaje`(`IdAmbalaj`, `DataIntrare`, `CantitatePrimita`) VALUES (@IdAmbalaj, @DataIntrare, @Cantitate)", DBConnexion.con);
+            cmdInsertIntrari.Parameters.AddWithValue("@IdAmbalaj", Convert.ToInt32(textBoxCodAmbalaj.Text));
+            cmdInsertIntrari.Parameters.AddWithValue("@DataIntrare", dateTimePicker.Value.Date);
+            cmdInsertIntrari.Parameters.AddWithValue("@Cantitate", Convert.ToInt32(textBoxStoc.Text));
+            cmdInsertIntrari.ExecuteNonQuery();
         }
     }
 }

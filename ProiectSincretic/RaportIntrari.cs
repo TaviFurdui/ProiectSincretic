@@ -24,7 +24,13 @@ namespace ProiectSincretic
             cmd.Parameters.AddWithValue("@data1", dateTimePicker1.Value.Date);
             cmd.Parameters.AddWithValue("@data2", dateTimePicker2.Value.Date);
             cmd.Parameters.AddWithValue("@id_produs", Convert.ToInt32(textBoxProdus.Text));
-            labelAfisare.Text = "Total intrari intre cele doua date: " + cmd.ExecuteScalar().ToString();
+            string suma = cmd.ExecuteScalar().ToString();
+            Console.WriteLine(cmd.ExecuteScalar());
+            if (cmd.ExecuteScalar().ToString() == "")
+            {
+                suma = "0";
+            }
+            labelAfisare.Text = "Total intrari intre cele doua date: " + suma;
         }
     }
 }

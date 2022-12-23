@@ -38,6 +38,8 @@ namespace ProiectSincretic
             this.textBoxCapacitate = new System.Windows.Forms.TextBox();
             this.textBoxNumeAmbalaj = new System.Windows.Forms.TextBox();
             this.textBoxCodAmbalaj = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label4
@@ -45,9 +47,9 @@ namespace ProiectSincretic
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(160, 206);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 13);
+            this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 20;
-            this.label4.Text = "Stoc";
+            this.label4.Text = "Cantitate primita";
             // 
             // label3
             // 
@@ -78,7 +80,7 @@ namespace ProiectSincretic
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(160, 281);
+            this.buttonAdd.Location = new System.Drawing.Point(160, 315);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(200, 41);
             this.buttonAdd.TabIndex = 16;
@@ -114,11 +116,29 @@ namespace ProiectSincretic
             this.textBoxCodAmbalaj.Size = new System.Drawing.Size(200, 20);
             this.textBoxCodAmbalaj.TabIndex = 11;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(160, 258);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 13);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Data primire";
+            // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Location = new System.Drawing.Point(160, 274);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker.TabIndex = 21;
+            // 
             // AdaugareAmbalaj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 396);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -145,5 +165,7 @@ namespace ProiectSincretic
         private System.Windows.Forms.TextBox textBoxCapacitate;
         private System.Windows.Forms.TextBox textBoxNumeAmbalaj;
         private System.Windows.Forms.TextBox textBoxCodAmbalaj;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
     }
 }

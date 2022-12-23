@@ -84,5 +84,29 @@ namespace ProiectSincretic
             var vanzare = new Vanzare();
             vanzare.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var raportIntrariAmbalaje = new RaportIntrariAmbalaje();
+            raportIntrariAmbalaje.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var adaugareMijloc = new AdaugareMijloc();
+            adaugareMijloc.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var selectareMijloc = new SelectareMijloc();
+            selectareMijloc.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var raportMijloace = new RaportMijloace();
+            raportMijloace.Show();
+        }
     }
 }

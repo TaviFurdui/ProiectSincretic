@@ -29,7 +29,6 @@ namespace ProiectSincretic
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxIdProdus = new System.Windows.Forms.TextBox();
             this.buttonVinde = new System.Windows.Forms.Button();
@@ -38,16 +37,6 @@ namespace ProiectSincretic
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ce vinzi?";
             // 
             // label2
             // 
@@ -103,9 +92,9 @@ namespace ProiectSincretic
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(32, 155);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 13);
+            this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Cand vinzi?";
+            this.label4.Text = "Data vanzarii";
             // 
             // Vanzare
             // 
@@ -119,7 +108,6 @@ namespace ProiectSincretic
             this.Controls.Add(this.buttonVinde);
             this.Controls.Add(this.textBoxIdProdus);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Vanzare";
             this.Text = "Vanzare";
             this.ResumeLayout(false);
@@ -128,8 +116,6 @@ namespace ProiectSincretic
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxIdProdus;
         private System.Windows.Forms.Button buttonVinde;

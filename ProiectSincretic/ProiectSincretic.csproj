@@ -58,6 +58,12 @@
     <Compile Include="AdaugareMaterial.Designer.cs">
       <DependentUpon>AdaugareMaterial.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdaugareMijloc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugareMijloc.Designer.cs">
+      <DependentUpon>AdaugareMijloc.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -79,6 +85,24 @@
     <Compile Include="RaportIntrari.Designer.cs">
       <DependentUpon>RaportIntrari.cs</DependentUpon>
     </Compile>
+    <Compile Include="RaportIntrariAmbalaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaportIntrariAmbalaje.Designer.cs">
+      <DependentUpon>RaportIntrariAmbalaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaportMijloace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaportMijloace.Designer.cs">
+      <DependentUpon>RaportMijloace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectareMijloc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectareMijloc.Designer.cs">
+      <DependentUpon>SelectareMijloc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vanzare.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdaugareMaterial.resx">
       <DependentUpon>AdaugareMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugareMijloc.resx">
+      <DependentUpon>AdaugareMijloc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -108,6 +135,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RaportIntrari.resx">
       <DependentUpon>RaportIntrari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaportIntrariAmbalaje.resx">
+      <DependentUpon>RaportIntrariAmbalaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaportMijloace.resx">
+      <DependentUpon>RaportMijloace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectareMijloc.resx">
+      <DependentUpon>SelectareMijloc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vanzare.resx">
       <DependentUpon>Vanzare.cs</DependentUpon>

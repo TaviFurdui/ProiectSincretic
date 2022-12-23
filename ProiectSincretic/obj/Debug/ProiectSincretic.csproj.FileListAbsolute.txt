@@ -27,3 +27,7 @@ C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\Pro
 C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.RaportIntrari.resources
 C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.RaportIesiri.resources
 C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.Vanzare.resources
+C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.RaportIntrariAmbalaje.resources
+C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.AdaugareMijloc.resources
+C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.SelectareMijloc.resources
+C:\Users\Skullcandy\source\repos\ProiectSincretic\ProiectSincretic\obj\Debug\ProiectSincretic.RaportMijloace.resources
