@@ -35,7 +35,7 @@ namespace ProiectSincretic
             bSource.DataSource = dt;
             dataGridView1.DataSource = bSource;
 
-            MySqlCommand cmd1 = new MySqlCommand("SELECT * FROM mijloacetransport", DBConnexion.con);
+            MySqlCommand cmd1 = new MySqlCommand("SELECT * FROM mijloacetransport WHERE status=='disponibil'", DBConnexion.con);
             MySqlDataAdapter sda1 = new MySqlDataAdapter(cmd1);
             DataTable dt1 = new DataTable();
             sda1.Fill(dt1);
